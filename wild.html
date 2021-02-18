@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Shundo Calculator</title>
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">Homepage</a>
+        <a href="trade.html">Trades</a>
+        <a href="raid.html">Raids</a>
+        <a href="wild.html">Wild Catch</a>
+    </nav>
+    <br><br>
+    <div id="wildpage">
+    <select id="list" onchange="shundoWild();">
+        <option>Please select a Pokemon</option>
+        <option value="bulbasaur">Bulbasaur</option>
+        <option value="caterpie">Caterpie</option>
+        <option value="pidgey">Pidgey</option>
+        <option value="ekans">Ekans</option>
+        <option value="aSandshrew">Alolan Sandshrew</option>
+        <option value="nidoranF">Nidoran (female)</option>
+        <option value="nidoranM">Nidoran (male)</option>
+        <option value="aVulpix">Alolan Vulpix</option>
+        <option value="jigglypuff">Jigglypuff</option>
+        <option value="zubat">Zubat</option>
+        <option value="oddish">Oddish</option>
+        <option value="venonat">Venonat</option>
+        <option value="growlithe">Growlithe</option>
+        <option value="abra">Abra</option>
+        <option value="machop">Machop</option>
+        <option value="bellsprout">Bellsprout</option>
+        <option value="tentacool">Tentacool</option>
+        <option value="geodude">Geodude</option>
+        <option value="magnemite">Magnemite</option>
+        <option value="seel">Seel</option>
+        <option value="grimer">Grimer</option>
+        <option value="shellder">Shellder</option>
+        <option value="gastly">Gastly</option>
+        <option value="onix">Onix</option>
+        <option value="drowzee">Drowzee</option>
+        <option value="krabby">Krabby</option>
+        <option value="voltorb">Voltorb</option>
+        <option value="exeggcute">Exeggcute</option>
+        <option value="koffing">Koffing</option>
+        <option value="rhyhorn">Rhyhorn</option>
+        <option value="chansey">Chansey</option>
+        <option value="tangela">Tangela</option>
+        <option value="tauros">Tauros</option>
+        <option value="magikarp">Magikarp</option>
+        <option value="eevee">Eevee</option>
+        <option value="omanyte">Omanyte</option>
+        <option value="aerodactyl">Aerodactyl</option>
+        <option value="dratini">Dratini</option>
+        <option value="chikorita">Chikorita</option>
+        <option value="cyndaquil">Cyndaquil</option>
+        <option value="totodile">Totodile</option>
+        <option value="sentret">Sentret</option>
+        <option value="chinchou">Chinchou</option>
+        <option value="mareep">Mareep</option>
+        <option value="sudowoodo">Sudowoodo</option>
+        <option value="aipom">Aipom</option>
+        <option value="sunkern">Sunkern</option>
+        <option value="yanma">Yanma</option>
+        <option value="murkrow">Murkrow</option>
+        <option value="misdreavus">Misdreavus</option>
+        <option value="pineco">Pineco</option>
+        <option value="dunsparce">Dunsparce</option>
+        <option value="shuckle">Shuckle</option>
+        <option value="sneasel">Sneasel</option>
+        <option value="teddiursa">Teddiursa</option>
+        <option value="swinub">Swinub</option>
+        <option value="delibird">Delibird</option>
+        <option value="skarmory">Skarmory</option>
+        <option value="houndour">Houndour</option>
+        <option value="larvitar">Larvitar</option>
+        <option value="treecko">Treecko</option>
+        <option value="mudkip">Mudkip</option>
+        <option value="poochyena">Poochyena</option>
+        <option value="zigzagoon">Zigzagoon</option>
+        <option value="wurmple">Wurmple</option>
+        <option value="seedot">Seedot</option>
+        <option value="taillow">Taillow</option>
+        <option value="nincada">Nincada</option>
+        <option value="makuhita">Makuhita</option>
+        <option value="skitty">Skitty</option>
+        <option value="roselia">Roselia</option>
+        <option value="spoink">Spoink</option>
+        <option value="lunatone">Lunatone</option>
+        <option value="barboach">Barboach</option>
+        <option value="baltoy">Baltoy</option>
+        <option value="feebas">Feebas</option>
+        <option value="shuppet">Shuppet</option>
+        <option value="duskull">Duskull</option>
+        <option value="snorunt">Snorunt</option>
+        <option value="luvdisc">Luvdisc</option>
+        <option value="beldum">Beldum</option>
+        <option value="turtwig">Turtwig</option>
+        <option value="chimchar">Chimchar</option>
+        <option value="piplup">Piplup</option>
+        <option value="drifloon">Drifloon</option>
+        <option value="buneary">Buneary</option>
+        <option value="gible">Gible</option>
+        <option value="hippopotas">Hippopotas</option>
+        <option value="skorupi">Skorupi</option>
+        <option value="croagunk">Croagunk</option>
+        <option value="snover">Snover</option>
+        <option value="patrat">Patrat</option>
+        <option value="pidove">Pidove</option>
+        <option value="roggenrola">Roggenrola</option>
+        <option value="woobat">Woobat</option>
+        <option value="dwebble">Dwebble</option>
+        <option value="minccino">Minccino</option>
+        <option value="alomomola">Alomomola</option>
+        <option value="snivy">Snivy</option>
+        <option value="miltank">Miltank</option>
+    </select>
+    <br><br>
+    <div id="print"></div>
+    <br><br>
+    <hr>
+    <br>
+    <p>The chance to catch a SHUNDO community day Pokemon is 1/43200 when weather boosted or 1/102400 when not weather boosted.</p></div>
+    <br><br>
+    <br><br>
+    <p class="credit">Shiny rates sourced from the wonderful <a href="https://thesilphroad.com/shiny-pokemon" target="_blank">Silph Road</a>.</p>
+</body>
+</html>

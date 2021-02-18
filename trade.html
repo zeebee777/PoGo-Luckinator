@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Hundo Calculator</title>
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">Homepage</a>
+        <a href="trade.html">Trades</a>
+        <a href="raid.html">Raids</a>
+        <a href="wild.html">Wild Catch</a>
+    </nav>
+    <br><br>
+    <br>
+    <div id="tradepage">
+    <select id="friendshiplist" onchange="hundoTrade();">
+        <option>Please select a friendship level</option>
+        <option value="bestFriend">Best Friends</option>
+        <option value="ultraFriend">Ultra Friends</option>
+        <option value="greatFriend">Great Friends</option>
+        <option value="goodFriend">Good Friends</option>
+    </select><br><br>
+    <div id="printTwo"></div>
+    </div><br>
+</body>
+</html>
