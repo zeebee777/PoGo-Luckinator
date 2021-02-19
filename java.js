@@ -157,7 +157,13 @@ function shundoWild(){
     }
 }
 
-
+function customShinyRate(){
+    let ivs=document.getElementById("inputlist").value;
+    let shr=document.getElementById("customshinyrate").value;
+    let iv=ivCombinations(ivFloor[ivs]);
+    returnValue=iv*shr;
+    document.getElementById("printThree").innerHTML=("The chance to get your desired Pokemon SHUNDO is  ~1/"+returnValue+".");
+}
 
 
 

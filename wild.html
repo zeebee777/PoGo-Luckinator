@@ -12,7 +12,6 @@
     <nav id="navbar">
         <a href="index.html" class="hpbutton">Homepage</a>
         <a href="trade.html" class="hpbutton">Trades</a>
-        <a href="raid.html" class="hpbutton">Raids</a>
         <a href="wild.html" class="hpbutton">Wild Catch</a>
     </nav>
     <br><br>
@@ -126,11 +125,27 @@
         <input id="checkbox1" type="checkbox" onchange="switchChange();shundoWild();">
         <span class="slider"></span>
     </label></div>
-    <div id="print"></div>
+    <div id="print" class="jsoutput"></div>
     <br>
     <hr>
     <br>
-    <p>The chance to catch a SHUNDO community day Pokemon is 1/43200 when weather boosted or 1/102400 when not weather boosted.</p></div>
+    <p>For custom shiny rates:</p>
+    <form>
+        Please enter your desired shiny rate <br>1/<input type="text"id="customshinyrate"name="customshinyrate">
+        <br><br>Please select which IV floor you would like to use<br>
+        <select id="inputlist">
+            <option value="wild">0 - Wild Catch</option>
+            <option value="weatherBoost">4 - Weather Boosted</option>
+            <option value="hatch">10 - Hatch/Research/Raid/GBL</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit" onclick="customShinyRate();">
+    </form><br>
+    <div id="printThree" class="jsoutput"></div>
+    <br><hr>
+    <br>
+    <p>The chance to catch a SHUNDO community day Pokemon is 1/43200 when weather boosted or 1/102400 when not weather boosted.</p>
+    </div>
     <br><br>
     <br><br>
     <p class="credit">Shiny rates sourced from the wonderful <a href="https://thesilphroad.com/shiny-pokemon" target="_blank">Silph Road</a>.</p>
