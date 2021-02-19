@@ -63,3 +63,14 @@ html{
 .hpbutton:hover{
     font-style:italic;
 }
+#weatherboostP{
+    font-size:10px;
+}
+#wbcheckbox{
+    display:flex;
+    flex-direction: row;
+    padding:12px;
+}
+.switch{
+    padding-top:6px;
+}

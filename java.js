@@ -14,7 +14,16 @@ const ivFloor={
     goodFriend:1,
     wild:0
 }
-
+const wbSwitchValue={
+    on:false
+}
+function switchChange(){
+    if (wbSwitchValue.on===false){
+        wbSwitchValue.on=true;
+    }else{
+        wbSwitchValue.on=false;
+    }
+}
 class Pokemon{
     constructor(name,shinyrate){
         this.name=name;
@@ -128,14 +137,31 @@ const characters={
 
 
 
+// function shundoWild(){
+//     let nam=document.getElementById("list").value;
+//     let mon=characters[nam];
+//     let nowb=mon.shinyrate*ivCombinations(ivFloor.wild);
+//     let wb=mon.shinyrate*ivCombinations(ivFloor.weatherBoost);
+//     console.log(mon.name);
+//     document.getElementById("print").innerHTML=("The chance to get a SHUNDO "+mon.name+" wild catch is ~1/"+wb+" when weather boosted, or ~1/"+nowb+" when not weather boosted.")
+// }
 function shundoWild(){
     let nam=document.getElementById("list").value;
     let mon=characters[nam];
     let nowb=mon.shinyrate*ivCombinations(ivFloor.wild);
     let wb=mon.shinyrate*ivCombinations(ivFloor.weatherBoost);
-    console.log(mon.name);
-    document.getElementById("print").innerHTML=("The chance to get a SHUNDO "+mon.name+" wild catch is ~1/"+wb+" when weather boosted, or ~1/"+nowb+" when not weather boosted.")
+    if(wbSwitchValue.on===true){
+        document.getElementById("print").innerHTML=("The chance to get a SHUNDO "+mon.name+" wild catch is ~1/"+wb+" when weather boosted.")
+    }else{
+        document.getElementById("print").innerHTML=("The chance to get a SHUNDO "+mon.name+" wild catch is ~1/"+nowb+" when not weather boosted.")
+    }
 }
+
+
+
+
+
+
 // function shundoRaid(){
 //     let chance=216*20;
 //     return "The chance to recieve a SHUNDO legendary is ~1/"+chance+", assuming the legendary is shiny eligible."

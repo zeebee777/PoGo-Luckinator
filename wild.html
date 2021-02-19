@@ -120,9 +120,14 @@
         <option value="snivy">Snivy</option>
         <option value="miltank">Miltank</option>
     </select>
-    <br><br>
+    <div id="wbcheckbox">
+        <p id="weatherboostP">Weather Boosted?</p>
+    <label class="switch">
+        <input id="checkbox1" type="checkbox" onchange="switchChange();shundoWild();">
+        <span class="slider"></span>
+    </label></div>
     <div id="print"></div>
-    <br><br>
+    <br>
     <hr>
     <br>
     <p>The chance to catch a SHUNDO community day Pokemon is 1/43200 when weather boosted or 1/102400 when not weather boosted.</p></div>
