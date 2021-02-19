@@ -1,11 +1,11 @@
 html{
-    background-color:gray;
+    background-color:grey;
     color:white;
     font-family:"monaco","Courier New",monospace;
 }
 @media only screen and (max-width:768px){
     #navbar{
-        background:rgba(255, 255, 255, 0.85);
+        background:rgba(255, 255, 255);
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -20,10 +20,28 @@ html{
     .hpbutton{
         font-size:12px;
     }
+    #wildpage{
+        margin-left:15%;
+        margin-right:15%;
+        background-color:rgba(255, 255, 255, 0.3);
+        padding:20px;
+    }
+    #tradepage{
+        margin-left:15%;
+        margin-right:15%;
+        background-color:rgba(255, 255, 255, 0.3);
+        padding:20px;
+    }
+    .links{
+        text-align:center;
+        background-color:rgba(207, 207, 207, 0.3);
+        margin-left:15%;
+        margin-right:15%;
+    }
 }
 @media only screen and (min-width:769px){
     #navbar{
-    background:rgba(255, 255, 255, 0.85);
+    background:rgba(255, 255, 255);
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -35,31 +53,28 @@ html{
     box-shadow:inset 0 0 6px rgba(0, 0, 0, 1);
     border-radius:12px;
 }
-}
-.links{
-    text-align:center;
-    background-color:rgba(207, 207, 207, 0.3);
-    margin-left:15%;
-    margin-right:15%;
-}
 #wildpage{
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:25%;
+    margin-right:25%;
     background-color:rgba(255, 255, 255, 0.3);
     padding:20px;
 }
 #tradepage{
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:25%;
+    margin-right:25%;
     background-color:rgba(255, 255, 255, 0.3);
     padding:20px;
 }
-#raidpage{
-    margin-left:20%;
-    margin-right:20%;
-    background-color:rgba(255, 255, 255, 0.3);
-    padding:20px;
+.links{
+    text-align:center;
+    background-color:rgba(207, 207, 207, 0.3);
+    margin-left:25%;
+    margin-right:25%;
 }
+}
+
+
+
 .hpbutton:hover{
     font-style:italic;
 }
